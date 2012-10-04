@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TypeScript Compile Demo</title>
+</head>
+<body>
+    <!-- Add your TypeScript code block using type="text/typescript" -->
+    <script type="text/typescript">
+        module Sayings {
+            export class Greeter {
+                greeting: string;
+                constructor (message: string) {
+                    this.greeting = message;
+                }
+                greet() {
+                    return "Hello, " + this.greeting;
+                }
+            }
+        }
+    </script>
+    <!-- You can add multiple TypeScript blocks: -->
+    <script type="text/typescript">
+        var greeter = new Sayings.Greeter('world');
+        var button = document.createElement('button')
+        button.innerHTML = "Say Hello"
+        button.onclick = function() {
+                alert(greeter.greet())
+        }
+        document.body.appendChild(button)
+    </script>
+    <!-- And you can load external TypeScripts (from the same domain): -->
+    <script type="text/typescript" src="demo.ts"></script>
+    <!-- Don't forget to add these two JavaScripts: -->
+    <script type="text/javascript" src="typescript.min.js"></script>
+    <script type="text/javascript" src="typescript.compile.min.js"></script>
+</body>
+</html>
