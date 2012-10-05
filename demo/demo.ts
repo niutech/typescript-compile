@@ -21,6 +21,10 @@ class Horse extends Animal {
 
 var sam = new Snake("Sammy the Python")
 var tom: Animal = new Horse("Tommy the Palomino")
-
-sam.move()
-tom.move(34)
+var but = document.createElement('button')
+but.innerHTML = "Animal run"
+but.onclick = function() {
+    sam.move()
+    tom.move(34)
+}
+document.body.appendChild(but)
