@@ -13,12 +13,12 @@ or include your TS file:
 
     <script type="text/typescript" src="demo.ts"></script>
 
-and add these two JS files *at the end of the HTML body*:
+and add these two JS files **at the end of the HTML body**:
 
     <script type="text/javascript" src="typescript.min.js"></script>
     <script type="text/javascript" src="typescript.compile.min.js"></script>
 
-That's it! TypeScript will be compiled to JavaScript and immediately run, by appending the compiled script to the HTML body. You can see any compilation errors in the web console.
+That's it! TypeScript will be compiled to JavaScript and immediately run, by appending the compiled script to the HTML body. You can see any compilation errors in the web console. If you wish to perform a complex compilation with type checking, use the **typescript.compile.dev.js** file instead.
 
 
 Demo
@@ -32,7 +32,9 @@ Download
 
 [TypeScript 0.8](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.min.js) (minified JS)
 
-[TypeScript Compile 0.2](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.compile.min.js) (minified JS)
+[TypeScript Compile 0.3](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.compile.min.js) (minified JS)
+
+[TypeScript Compile 0.3](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.compile.dev.js) (development JS)
 
 
 Authors & License
