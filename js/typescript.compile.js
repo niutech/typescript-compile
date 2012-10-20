@@ -42,7 +42,7 @@ and limitations under the License.
         } else if(window.ActiveXObject) {
             xhr = new ActiveXObject('Microsoft.XMLHTTP');
         } else {
-            return false;
+            return "";
         }
         xhr.open('GET', url, false);
         if(xhr.overrideMimeType) {
@@ -52,7 +52,7 @@ and limitations under the License.
         if(xhr.status == 200) {
             return xhr.responseText;
         }
-        return false;
+        return "";
     }
 
     compile = function() {
