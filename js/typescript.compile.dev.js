@@ -85,33 +85,29 @@ and limitations under the License.
         if(src.length == 0) {
             return;
         }
-        try {
-            if(window.sessionStorage && sessionStorage.getItem('typescript' + hashCode(src.join('')))) {
-                outfile.source = sessionStorage.getItem('typescript' + hashCode(src.join('')));
-            } else {
-                compiler.parser.errorRecovery = true;
-                compiler.setErrorCallback(function(start, len, message, block) {
-                    console.log('Compilation error: ', message, '\n Code block: ', block, ' Start position: ', start, ' Length: ', len);
-                });
-                compiler.addUnit(libfile, 'lib.d.ts');
-                for(i = 0; i < src.length; i++) {
-                    compiler.addUnit(src[i], '');
-                }
-                compiler.typeCheck();
-                compiler.emit(false, function createFile(fileName) {
-                    return outfile;
-                });
-                if(window.sessionStorage) {
-                    sessionStorage.setItem('typescript' + hashCode(src.join('')), outfile.source);
-                }
+        if(window.sessionStorage && sessionStorage.getItem('typescript' + hashCode(src.join('')))) {
+            outfile.source = sessionStorage.getItem('typescript' + hashCode(src.join('')));
+        } else {
+            compiler.parser.errorRecovery = true;
+            compiler.setErrorCallback(function(start, len, message, block) {
+                console.log('Compilation error: ', message, '\n Code block: ', block, ' Start position: ', start, ' Length: ', len);
+            });
+            compiler.addUnit(libfile, 'lib.d.ts');
+            for(i = 0; i < src.length; i++) {
+                compiler.addUnit(src[i], '');
             }
-            elem = document.createElement('script');
-            elem.type = 'text/javascript';
-            elem.innerHTML = '//Compiled TypeScript\n\n' + outfile.source;
-            body.appendChild(elem);
-        } catch(e) {
-            console.log('Fatal error: ', e);
+            compiler.typeCheck();
+            compiler.emit(false, function createFile(fileName) {
+                return outfile;
+            });
+            if(window.sessionStorage) {
+                sessionStorage.setItem('typescript' + hashCode(src.join('')), outfile.source);
+            }
         }
+        elem = document.createElement('script');
+        elem.type = 'text/javascript';
+        elem.innerHTML = '//Compiled TypeScript\n\n' + outfile.source;
+        body.appendChild(elem);
     }
         
     compile();
