@@ -30,11 +30,11 @@ Demo
 Download
 --------
 
-[TypeScript 0.8](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.min.js) (minified JS)
+[TypeScript 1.0.1](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.min.js) (minified JS)
 
-[TypeScript Compile 0.3](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.compile.min.js) (minified JS)
+[TypeScript Compile 0.4](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.compile.min.js) (minified JS)
 
-[TypeScript Compile 0.3](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.compile.dev.js) (development JS)
+[TypeScript Compile 0.4](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.compile.dev.js) (development JS)
 
 
 Authors & License
