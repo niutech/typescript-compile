@@ -1,12 +1,12 @@
 {
   "name": "typescript-compile",
   "version": "0.3",
-  "homepage": "https://github.com/markwylde/typescript-compile",
+  "homepage": "https://github.com/niutech/typescript-compile",
   "authors": [
     "niutech"
   ],
   "description": "Automatically compile TypeScript to JavaScript on the fly",
-  "main": "js/typescript.compile.js",
+  "main": "js/typescript.compile.min.js",
   "keywords": [
     "typescript"
   ],
