@@ -32,8 +32,7 @@ and add these two JS files **at the end of the HTML body**:
 
 That's it! TypeScript will be compiled to JavaScript and immediately run, by appending the compiled script to the HTML body. 
 
-> Note: You probably don't want to do this on a production website/application but for development
-it can help
+> Note: You probably don't want to do this on a production website/application but running the TypeScript directly in your browser can help while you are developing.
 
 Demo
 ----
