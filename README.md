@@ -50,6 +50,14 @@ Download
 [TypeScript Compile 0.4](https://github.com/markwylde/typescript-compile/blob/master/js/typescript.compile.js) (development JS)
 
 
+Developing and Updating
+-----------------------
+
+If you would like to upgrade typescript-compile to the latest version of TypeScript please have
+a look at the wiki entry:
+https://github.com/markwylde/typescript-compile/wiki/Updating-TypeScript
+
+
 Authors & License
 ----------------
 
