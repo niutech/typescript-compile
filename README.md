@@ -1,6 +1,6 @@
 TypeScript Compile
 ==================
-**Current Version:** TypeScript 1.5-alpha
+**Current Version:** [TypeScript 1.5-alpha](https://github.com/Microsoft/TypeScript/tree/v1.5.0-alpha)
 
 ---
 
