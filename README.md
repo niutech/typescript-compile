@@ -4,7 +4,7 @@ TypeScript Compile
 
 ---
 
-[TypeScript](http://www.typescriptlang.org) TypeScript is a free and open source programming 
+[TypeScript](http://www.typescriptlang.org) is a free and open source programming 
 language developed and maintained by Microsoft. It is a strict superset of JavaScript, and 
 adds optional static typing and class-based object-oriented programming to the language.
 
