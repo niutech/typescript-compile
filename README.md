@@ -18,23 +18,23 @@ and add these two JS files **at the end of the HTML body**:
     <script type="text/javascript" src="typescript.min.js"></script>
     <script type="text/javascript" src="typescript.compile.min.js"></script>
 
-That's it! TypeScript will be compiled to JavaScript and immediately run, by appending the compiled script to the HTML body. You can see any compilation errors in the web console. If you wish to perform a complex compilation with type checking, use the **typescript.compile.dev.js** file instead.
+That's it! TypeScript will be compiled to JavaScript and immediately run, by appending the compiled script to the HTML body. 
 
 
 Demo
 ----
 
-[Here is a live demo](http://niutech.github.com/typescript-compile/demo/demo.html)
+[Here is a live demo](http://www.markwylde.co.uk/typescript-compile/demo/demo.html)
 
 
 Download
 --------
 
-[TypeScript 0.8](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.min.js) (minified JS)
+[TypeScript 1.5-alpha](https://github.com/markwylde/typescript-compile/blob/master/js/typescript.js) (minified JS)
 
-[TypeScript Compile 0.3](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.compile.min.js) (minified JS)
+[TypeScript Compile 0.4](https://github.com/markwylde/typescript-compile/blob/master/js/typescript.compile.min.js) (minified JS)
 
-[TypeScript Compile 0.3](https://raw.github.com/niutech/typescript-compile/gh-pages/js/typescript.compile.dev.js) (development JS)
+[TypeScript Compile 0.4](https://github.com/markwylde/typescript-compile/blob/master/js/typescript.compile.js) (development JS)
 
 
 Authors & License
@@ -43,3 +43,5 @@ Authors & License
 TypeScript is developed by Microsoft Corp. under Apache 2.0 License.
 
 TypeScript Compile is developed by Jerzy Głowacki under Apache 2.0 License.
+
+TypeScript Compile has been updated for TypeScript 1.5-alpha by Mark Wylde under Apache 2.0 License.

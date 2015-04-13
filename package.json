@@ -1,0 +1,23 @@
+{
+  "name": "typescript-compile",
+  "version": "0.4.0",
+  "description": "Automatically compile TypeScript to JavaScript on the fly",
+  "main": "js/typescript.compile.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markwylde/typescript-compile.git"
+  },
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/markwylde/typescript-compile/issues"
+  },
+  "homepage": "https://github.com/markwylde/typescript-compile",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.9.1"
+  }
+}
