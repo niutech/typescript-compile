@@ -11,18 +11,24 @@ and have them compile at runtime.
 
 TypeScript Compile automatically transforms your TypeScript code into JavaScript on the fly! Just write your TS code between:
 
+```javascript
     <script type="text/typescript">
         ...
     </script>
+```
 
 or include your TS file:
 
+```html
     <script type="text/typescript" src="demo.ts"></script>
+```
 
 and add these two JS files **at the end of the HTML body**:
 
+```html
     <script type="text/javascript" src="typescript.min.js"></script>
     <script type="text/javascript" src="typescript.compile.min.js"></script>
+```
 
 That's it! TypeScript will be compiled to JavaScript and immediately run, by appending the compiled script to the HTML body. 
 
