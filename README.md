@@ -1,5 +1,8 @@
 TypeScript Compile
 ==================
+**Current Version:** TypeScript 1.5-alpha
+
+---
 
 [TypeScript](http://www.typescriptlang.org) TypeScript is a free and open source programming 
 language developed and maintained by Microsoft. It is a strict superset of JavaScript, and 
