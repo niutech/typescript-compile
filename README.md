@@ -1,6 +1,6 @@
 TypeScript Compile
 ==================
-**Current Version:** [TypeScript 1.5-alpha](https://github.com/Microsoft/TypeScript/tree/v1.5.0-alpha)
+**Current Version:** [TypeScript 1.8.10](https://github.com/Microsoft/TypeScript/tree/v1.8.10)
 
 ---
 
@@ -46,11 +46,11 @@ Demo
 Download
 --------
 
-[TypeScript 1.5-alpha](https://github.com/markwylde/typescript-compile/blob/master/js/typescript.js) (minified JS)
+[TypeScript 1.8.10](https://github.com/s7726/typescript-compile/blob/master/js/typescript.js) (minified JS)
 
-[TypeScript Compile 0.4](https://github.com/markwylde/typescript-compile/blob/master/js/typescript.compile.min.js) (minified JS)
+[TypeScript Compile 0.5](https://github.com/s7726/typescript-compile/blob/master/js/typescript.compile.min.js) (minified JS)
 
-[TypeScript Compile 0.4](https://github.com/markwylde/typescript-compile/blob/master/js/typescript.compile.js) (development JS)
+[TypeScript Compile 0.5](https://github.com/s7726/typescript-compile/blob/master/js/typescript.compile.js) (development JS)
 
 
 Developing and Updating
@@ -59,6 +59,18 @@ Developing and Updating
 If you would like to upgrade typescript-compile to the latest version of TypeScript please have
 a look at the wiki entry:
 https://github.com/markwylde/typescript-compile/wiki/Updating-TypeScript
+
+@markwylde did a great job on the wiki entry, but it there were a few sticking points I ran into:
+
+- The typescript files needed are in different folders now
+	- They are both in the `./lib` folder rather than the `./bin` folder
+- The minifyer he suggests did not strip the comments correctly
+	- I used [http://www.danstools.com/javascript-minify/](http://www.danstools.com/javascript-minify/)
+	- This one doesn't strip all the new lines so I still had to combine all the lines (Sublime Text to the rescue)
+- the demo should be hosted to prevent modern browsers from preventing loading of some of the files
+	- `npm install http-server` or something similar is your friend
+	- run `http-server` in the base directory of the checkout and visit `http://127.0.0.1/demo/demo.html` that way the
+      path to the js files will resolve correctly (CORS issues)
 
 
 Authors & License

@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/markwylde/typescript-compile.git"
+    "url": "https://github.com/s7726/typescript-compile.git"
   },
   "author": "",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/markwylde/typescript-compile/issues"
+    "url": "https://github.com/s7726/typescript-compile/issues"
   },
-  "homepage": "https://github.com/markwylde/typescript-compile",
+  "homepage": "https://github.com/s7726/typescript-compile",
   "dependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-uglify": "^0.9.1"
+    "grunt": ">0.4.5",
+    "grunt-contrib-uglify": ">0.9.1"
   }
 }
