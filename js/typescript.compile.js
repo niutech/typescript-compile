@@ -65,7 +65,7 @@ and limitations under the License.
                 this.files = {};
                 this.getCompilationSettings = ts.getDefaultCompilerOptions;
                 this.getScriptIsOpen = function () { return true; };
-                this.getCurrentDirectory = function () { './'; };
+                this.getCurrentDirectory = function () { return './'; };
                 this.getDefaultLibFileName = function (options) { return "lib.d.ts"; };
             }
             MyLanguageServiceHost.prototype.log = function (msg) {
