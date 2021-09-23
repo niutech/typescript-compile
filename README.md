@@ -24,7 +24,7 @@ That's it! TypeScript will be compiled to JavaScript and immediately run, by app
 Demo
 ----
 
-[Here is a live demo](http://niutech.github.com/typescript-compile/demo/demo.html)
+[Here is a live demo](http://niutech.github.io/typescript-compile/demo/demo.html)
 
 
 Download
